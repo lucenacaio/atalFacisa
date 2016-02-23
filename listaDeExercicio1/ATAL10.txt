@@ -1,0 +1,30 @@
+
+#include <stdio.h> 
+
+ int main () { 
+	 int num; 
+	 float f; 
+	 num=10; 
+	 f=(float) num/7; 
+	 printf ("%f",f); 
+	 return(0); 
+ }
+
+No caso em que o bloco de código possui o cast o resultado obtido é 1.428571
+
+
+#include <stdio.h> 
+
+ int main () { 
+	 int num; 
+	 float f; 
+	 num=10; 
+	 f= num/7; 
+	 printf ("%f",f); 
+	 return(0); 
+ }
+
+
+Para po trecho de código sem o cast o valor é 1.000000;
+
+Isto ocorre porque a linguagem faz um arredondamento do valor para um número decimal, e como a exibição está para um float %f então são exibidos as casas decimais

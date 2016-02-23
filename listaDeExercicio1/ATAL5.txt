@@ -1,0 +1,7 @@
+a) Explique porque est· errado fazer 
+
+ if (num=10) ... 
+
+O que ir· acontecer?
+
+Resposta: O programa entrará no condicional, mesmo que o intuito de fazer esse teste fosse de que essa verificação fosse falsa. O fato de conter apenas um simbolo de igualdade(=) faz com que o valor seja atribuido à variável, sendo assim esta condição será sempre verdadeira.O correto para fazer um teste condicional é usar dois simbolos de igualdade(==).
